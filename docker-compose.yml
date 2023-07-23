@@ -1,0 +1,11 @@
+version: '3'
+services:
+  batfish:
+    image: batfish/allinone:latest
+    ports:
+      - 8888:8888
+      - 9996:9996
+      - 9997:9997
+    volumes:
+      - ./input:/notebooks/input
+      - ./output:/notebooks/output
